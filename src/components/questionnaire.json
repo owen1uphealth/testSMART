@@ -1,0 +1,51 @@
+{
+    "resourceType": "Questionnaire",
+    "id": "prior-auth-questionnaire",
+    "url": "http://example.com/fhir/Questionnaire/prior-auth-questionnaire",
+    "status": "active",
+    "subjectType": ["Patient"],
+    "date": "2023-11-09",
+    "item": [
+      {
+        "linkId": "1",
+        "text": "What is the patient's full name?",
+        "type": "string"
+      },
+      {
+        "linkId": "2",
+        "text": "What is the patient's insurance provider?",
+        "type": "string"
+      },
+      {
+        "linkId": "3",
+        "text": "What is the requested service or procedure?",
+        "type": "string"
+      },
+      {
+        "linkId": "4",
+        "text": "Please provide the CPT (Current Procedural Terminology) code for the requested service.",
+        "type": "string"
+      },
+      {
+        "linkId": "5",
+        "text": "Is there a clinical justification for this service? Please describe.",
+        "type": "text"
+      },
+      {
+        "linkId": "6",
+        "text": "Has the patient received this or a similar service in the past?",
+        "type": "boolean"
+      },
+      {
+        "linkId": "7",
+        "text": "Is there any additional relevant medical history for this patient?",
+        "type": "text"
+      },
+      {
+        "linkId": "8",
+        "text": "Date of the proposed service or procedure:",
+        "type": "date"
+      }
+    ]
+}
+  

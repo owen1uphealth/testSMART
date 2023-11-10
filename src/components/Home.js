@@ -1,7 +1,6 @@
 import React from "react";
 import FhirClientProvider from "./FhirClientProvider";
-import Chart from "./Chart";
-import Patient from "./Patient";
+import Questionnaire from "./Questionnaire";
 
 /**
  * Wraps everything into `FhirClientProvider` so that any component
@@ -10,9 +9,14 @@ import Patient from "./Patient";
 export default function Page() {
     return (
         <FhirClientProvider>
-            <Patient />
+            <div>
+                <img src="/networkhealth.png" alt="Network Health" />
+                <h1>
+                Prior Authorization Questionnaire
+                </h1>
+            </div>
             <hr />
-            <Chart />
+            <Questionnaire />
             <br />
         </FhirClientProvider>
     );
